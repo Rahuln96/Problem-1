@@ -2,6 +2,8 @@
 
 Template Name : MEDINOVA Hospital Website Template
 
+Image Source : https://pixabay.com/
+
 Modified
 
 Theme Color :-  Color Change
