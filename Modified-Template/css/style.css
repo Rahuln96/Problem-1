@@ -1,0 +1,398 @@
+/********** Template CSS **********/
+:root {
+    --primary: #0077b6;
+    --secondary: #0096c7;
+    --light: #EFF5F9;
+    --dark: #1D2A4D;
+}
+
+.btn {
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 8px 6px -6px #555555;
+    -moz-box-shadow: 0 8px 6px -6px #555555;
+    box-shadow: 0 8px 6px -6px #555555;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    background-color: #0077b6;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    z-index: 99;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    margin-left: 30px;
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: 0;
+        left: 50%;
+        background: var(--primary);
+        transition: .5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+/*Hero Banner*/
+
+.hero-header {
+    background: url(../img/banner.jpg) top right no-repeat;
+    background-size: cover;
+   
+}
+/* .hero-header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(5 38 111 / 91%);
+    
+} */
+.learn {
+    padding: 8px 24px;
+    border-radius: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #0c2f7d;
+    border: 0;
+}
+.learn:hover{
+    background-color: #0077b6;
+    color: white;
+}
+
+/*Features Section*/
+section.features-section {
+    margin-top: -90px;
+}
+.bg1 {
+    background: #10285f;
+}
+
+.bg2 {
+    background: #0c2f7d;
+}
+
+.bg3 {
+    background: #1148c3;
+}
+
+.features-box h3, .features-box p {
+    color: #FFF;
+}
+
+.features-box {
+    padding: 40px;
+}
+
+
+
+
+/*Services Section*/
+
+.section-title {
+    margin-bottom: 60px;
+    font-size: 50px;
+}
+
+section.services-section {
+    padding: 100px 0px 50px;
+    background: #10285f;
+}
+
+.services-box {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.services-box:hover{
+    border: 4px solid rgb(2, 255, 247);
+    background-color: #f1fdff;
+    border-top: 5px greenyellow;
+}
+
+.services-box h3 {
+    margin: 15px 0px 20px;
+}
+
+/******* Facility Section Start Here  *******/
+
+.facility {
+    padding-bottom: 50px;
+}
+.facility .heading {
+    text-align: center;
+    font-weight: 650;
+    padding-bottom: 15px;
+    margin: 0px;
+    padding: 0px;
+    color: #407BFF;
+}
+.facility hr{
+    width: 70px;
+    border-width: 4px;
+    border-color:#263238;
+    margin: auto;
+    border-radius: 2px;
+    padding: 3px 0px;
+    margin-top: 4px;
+
+}
+.facility .box{
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.facility .box img{
+    transition: all 0.5s linear;
+}
+.facility .box:hover img{
+    transform: scale(1.2);
+}
+/**** Facility Section Ends Here  *******/
+.inner-layer{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	background-color: rgba(0,147,173,0.7);
+	overflow: auto;
+}
+.form-data{
+	margin-top: 21%;
+	background-color: #FFF;
+	
+}
+.form-body{
+	padding: 20px;
+}
+.form-head{
+	padding: 10px;
+	border-bottom: 1px solid #CCC;
+}
+.form-head h2{
+	font-size: 22px;
+	font-weight: 600;
+}
+.no-margin{
+	margin: 0px;
+}
+
+.form-row{
+	margin-bottom: 15px;
+}
+.form-control{
+	background-color: #f7f7ff;
+	border-radius: 0px;
+
+}
+.form-control:focus{
+	box-shadow: none;
+	border: 3px solid #138496;
+}
+.btn-appointment{
+	background-color: #138496 !important;
+	border-color: #138496 !important;
+	width: 100%;
+}
+.content{
+	margin-top: 15%;
+	text-align: center;
+	color: #FFF;
+	padding: 30px;
+}
+.content h1{
+	font-weight: 600;
+	font-size: 3.5rem;
+}
+.content h2{
+	font-weight: 600;
+	font-size:2.5rem;
+	margin-top: 20px;
+}
+.content p{
+	font-size: 22px;
+	margin-top: 20px;
+}
+.datepicker td, .datepicker th{
+	padding: 5px;
+}
+.dropdown-menu.datepicker{
+	max-width: 300px !important;
+}
+
+
+@media screen and (max-width: 976px){
+	
+}
+
+@media (min-width: 576px) {
+    .team-item .row {
+        height: 350px;
+    }
+}
+
+.team-carousel .owl-nav {
+    position: absolute;
+    padding: 0 45px;
+    width: 100%;
+    height: 45px;
+    top: calc(50% - 22.5px);
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-carousel .owl-nav .owl-prev,
+.team-carousel .owl-nav .owl-next {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 45px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.team-carousel .owl-nav .owl-prev:hover,
+.team-carousel .owl-nav .owl-next:hover {
+    background: var(--dark);
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--light);
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 150px;
+    height: 150px;
+}
+
+/* about us  */
+
+/****** Counter Section Starts Here  ******/
+.counter .box{
+    text-align: center;
+    margin: 40px 0px;
+}
+.counter .box .fa-hospital,.fa-users,.fa-smile,.fa-procedures{
+    display: block;
+   margin: auto;
+   font-size: 40px;
+   color:#012a83;
+   margin-bottom: 10px;
+}
+
+.counter .box span{
+    font-size: 45px;
+    font-weight: 600;
+    
+}
+.counter .box h3{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: #3f3d3d;
+}
+/****** Counter Section Ends Here  ******/
+
+/* service page css  */
+.cta{
+    background-image: linear-gradient(to right, #0c2f7d, rgb(0, 135, 208));
+    padding: 20px;
+   
+    
+}
